@@ -1,0 +1,85 @@
+<div class="top-wrapper">
+  <div class="top-container">
+  <h1>NurseryWall</h1>
+  <h2>A4サイズの型紙を簡単ダウンロード</h2>
+  <h2>春夏秋冬・月の行事・お誕生日</h2>
+  </div>
+</div>
+<div class="lineup-wrapper">
+  <!-- HOT -->
+  <div class="lineup-title">
+    <h2><i class="fa fa-line-chart "></i>HOT </h2>
+  </div>
+  <div class="lineup">
+    <% for @i in 0..2 do %>
+    <div class="container">
+        <% if @katagamis_h[@i].name? %>
+          <div class="katagami-image">
+            <img src="<%= "/image/#{@katagamis_h[@i].filename}.jpg" %>" width="30%" height="30%">
+          </div>
+          <div>
+              <h2><%=  @katagamis_h[@i].name  %></h2>
+          </div>
+          <div class="katagami-explain">
+              <%=  @katagamis_h[@i].explain  %>
+          </div>
+          <div class="toShowbutton">
+            <%=  link_to("ダウンロード ➡", "/katagami/#{@katagamis_h[@i].name}",class: "btn btn--orange btn-lg") %>
+          </div>
+        <% end %>
+    </div>
+    <% end %>
+  </div>
+
+
+  <!-- Season -->
+  <div class="lineup-title">
+    <h2><i class="fa fa-calendar "></i> Season</h2>
+  </div>
+  <div class="lineup">
+    <% for @i in 0..2 do %>
+
+    <div class="container">
+        <% if @katagamis_s[@i].name? %>
+          <div class="katagami-image">
+            <img src="<%= "/image/#{@katagamis_s[@i].filename}.jpg" %>" width="30%" height="30%">
+          </div>
+            <h2><%=  @katagamis_s[@i].name  %></h2>
+          <div class="katagami-explain">
+              <%=  @katagamis_s[@i].explain  %>
+          </div>
+        <% end %>
+        <div class="toShowbutton">
+          <%=  link_to("ダウンロード ➡", "/katagami/#{@katagamis_s[@i].name}",class: "btn btn--orange btn-lg") %>
+        </div>
+    </div>
+    <% end %>
+  </div>
+
+  <!-- New -->
+  <div class="lineup-title">
+    <h2><i class="fa fa-flash "></i> New</h2>
+  </div>
+  <div class="lineup">
+    <% for @i in 0..2 do %>
+
+    <div class="container">
+        <% if @katagamis_n[@i].name? %>
+          <div class="katagami-image">
+            <img src="<%= "/image/#{@katagamis_n[@i].filename}.jpg" %>" width="30%" height="30%">
+          </div>
+          <div>
+            <h2><%=  @katagamis_n[@i].name  %></h2>
+          </div>
+          <div class="katagami-explain">
+              <%=  @katagamis_n[@i].explain  %>
+          </div>
+        <% end %>
+        <div class="toShowbutton">
+          <%=  link_to("ダウンロード ➡", "/katagami/#{@katagamis_n[@i].name}",class: "btn btn--orange btn-lg") %>
+        </div>
+    </div>
+    <% end %>
+  </div>
+
+</div>
