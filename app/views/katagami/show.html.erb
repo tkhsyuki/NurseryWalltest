@@ -1,0 +1,18 @@
+<div class="katagami-wrapper">
+<div class="container-1">
+  <div class="katagami-image-1">
+    <img src="<%= "/image/#{@katagami.filename}.jpg" %>" width="400" height="550">
+  </div>
+  <h1>
+    <%= @katagami.name %>
+  </h1>
+  <p>
+    <i class="fa fa-child fa-2x"></i> View×<%= @katagami.like %>
+  </p>
+  <div class="explain">
+  <h4>
+    <%= @katagami.explain %>
+  </h4>
+  </div>
+    <%= link_to("ダウンロード", asset_path("/image/#{@katagami.filename}.pdf"),class: "btn btn--orange btn-lg") %>
+</div>

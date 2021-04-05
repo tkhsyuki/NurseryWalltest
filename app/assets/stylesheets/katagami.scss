@@ -1,0 +1,65 @@
+// Place all the styles related to the katagami controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+
+.katagami-wrapper {
+  margin: 150px auto;
+  color:#696969;
+  text-align:center;
+  height:1000px;
+  width:800px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5)
+}
+
+.container-1 {
+  padding-top: 20px
+}
+
+.container-1 h1 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.container-1 p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.fa-child{
+  size:20px
+}
+
+.katagami-image-1 {
+  margin: 0 auto;
+
+}
+
+.explain {
+  margin:20px auto;
+}
+
+.bottom {
+
+}
+
+.btn {
+  margin:30px auto;
+  width:20%;
+  height:50px;
+}
+
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+  bottom:20px;
+
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}

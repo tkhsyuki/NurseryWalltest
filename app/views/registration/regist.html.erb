@@ -1,0 +1,16 @@
+<div class="katagami-new">
+  <h2>投稿する</h2>
+  <%= form_tag("/regist/new") do %>
+    <p>name</p>
+    <input name="name">
+    <p>filename</p>
+    <input name="filename">
+    <p>シーズン(月)</p>
+    <input name="season">
+    <p>説明</p>
+    <textarea name="explain"></textarea>
+    <p>category</p>
+    <textarea name="category"></textarea>
+    <input type="submit" value="<<<【投稿】>>>">
+  <% end %>
+</div>
